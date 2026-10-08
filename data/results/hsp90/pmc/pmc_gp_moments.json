@@ -1,0 +1,30 @@
+{
+  "mean_z": 0.5794335009528856,
+  "second_moment_z": 0.3696209041834506,
+  "variance_z": 0.033877722156932966,
+  "sd_z": 0.18405901813530617,
+  "K": 10,
+  "S": 1000,
+  "settings": {
+    "sampling_method": "iid",
+    "discrepancy_method": "consecutive",
+    "method": "PMC-GP",
+    "device": "cpu",
+    "kernels": {
+      "identity": "matern_32",
+      "square": "rbf"
+    }
+  },
+  "seeds": {
+    "identity": 94011,
+    "square": 94012
+  },
+  "runtime_seconds": {
+    "identity": 0.24958758299180772,
+    "square": 0.24976966700342018
+  },
+  "device": "cpu",
+  "device_name": "cpu",
+  "torch_version": "2.8.0",
+  "warmup": true
+}

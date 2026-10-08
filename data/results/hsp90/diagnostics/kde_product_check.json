@@ -1,0 +1,50 @@
+{
+  "grid": {
+    "min_z": -1.0,
+    "max_z": 2.0,
+    "points": 12001
+  },
+  "kde_product_moments": [
+    {
+      "bandwidth_multiplier": 0.5,
+      "mean_z": 0.57174770596392,
+      "second_moment_z": 0.32797297530620906,
+      "variance_z": 0.0010775360312039184,
+      "sd_z": 0.032825843952652894
+    },
+    {
+      "bandwidth_multiplier": 0.75,
+      "mean_z": 0.572329875831043,
+      "second_moment_z": 0.32980230154082274,
+      "variance_z": 0.0022408147720456295,
+      "sd_z": 0.047337245082974884
+    },
+    {
+      "bandwidth_multiplier": 1.0,
+      "mean_z": 0.5727763073816338,
+      "second_moment_z": 0.33192331595864105,
+      "variance_z": 0.0038506176609012233,
+      "sd_z": 0.06205334528372522
+    },
+    {
+      "bandwidth_multiplier": 1.5,
+      "mean_z": 0.5734652402820538,
+      "second_moment_z": 0.3372947343033747,
+      "variance_z": 0.008432352491620998,
+      "sd_z": 0.09182784159295589
+    },
+    {
+      "bandwidth_multiplier": 2.0,
+      "mean_z": 0.5740417611397227,
+      "second_moment_z": 0.34436397727216755,
+      "variance_z": 0.014840033739773106,
+      "sd_z": 0.12181967714525066
+    }
+  ],
+  "pmc_mlp_moments": {
+    "mean_z": 0.570853491338281,
+    "variance_z": 0.0028250262882822397,
+    "sd_z": 0.0531509763624549,
+    "second_moment_z": 0.3286987348613871
+  }
+}

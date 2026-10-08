@@ -1,0 +1,11 @@
+method,target,coefficient,estimate
+PMC-GP,identity,beta_0,0.14562766203815172
+PMC-GP,identity,beta_1,-0.518529161904833
+PMC-GP,identity,beta_2,-0.2918264297066493
+PMC-GP,identity,beta_3,-0.353348692614885
+PMC-GP,identity,beta_4,0.9563692667099497
+PMC-GP,square,beta_0,0.04685019776916829
+PMC-GP,square,beta_1,0.3117326988737438
+PMC-GP,square,beta_2,0.13081634402288697
+PMC-GP,square,beta_3,0.15117001271399744
+PMC-GP,square,beta_4,0.9518293627242981

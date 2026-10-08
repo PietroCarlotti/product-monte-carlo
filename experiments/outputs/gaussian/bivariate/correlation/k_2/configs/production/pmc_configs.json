@@ -1,0 +1,21 @@
+{
+  "sampling_method": "iid",
+  "algorithm": ["PMC", "Oracle"],
+  "w": ["uniform"],
+  "method": ["linear", "MLP"],
+  "degree": [1],
+  "hidden_features": [[64, 64, 64]],
+  "activation": "relu",
+  "discrepancy_centering": "mean",
+  "ensemble_size": 2,
+  "optimizer": "Adam",
+  "weight_decay": 0.0,
+  "base_learning_rate": {"identity": 1e-4, "square": 3e-4},
+  "learning_rate_schedule": ["cosine"],
+  "batch_size": [1024],
+  "n_training_steps": ["adaptive"],
+  "regression_loss": "mse",
+  "huber_delta": 1.0,
+  "loss_weighting": "uniform",
+  "input_degree": 1
+}

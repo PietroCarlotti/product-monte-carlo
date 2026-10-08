@@ -1,0 +1,27 @@
+{
+  "n_iterations": 10,
+  "iteration_start": 0,
+  "seed": 20260831,
+  "seed_strategy": "paired_methods",
+  "parametric_form": "bivariate_Gaussian",
+  "DGP_parameters": [
+    {
+      "mu": [[0, 0], [1, 1]],
+      "cov": [[[1, 0], [0, 1]], [[1, 0], [0, 1]]]
+    },
+    {
+      "mu": [[0, 0], [2, 2]],
+      "cov": [[[1, 0], [0, 1]], [[1, 0], [0, 1]]]
+    },
+    {
+      "mu": [[0, 0], [3, 3]],
+      "cov": [[[1, 0], [0, 1]], [[1, 0], [0, 1]]]
+    }
+  ],
+  "num_nodes": 2,
+  "n": [100, 1000, 10000],
+  "preprocessing": null,
+  "n_inference": 100000,
+  "h": ["identity", "square"],
+  "selected_n": 100
+}

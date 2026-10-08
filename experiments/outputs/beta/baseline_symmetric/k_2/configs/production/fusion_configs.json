@@ -1,0 +1,7 @@
+{
+  "method": [
+    "GBF"
+  ],
+  "coalescence_time": "optimal",
+  "n_time_steps": "optimal"
+}

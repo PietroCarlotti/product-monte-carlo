@@ -1,0 +1,24 @@
+{
+  "batch_inputs": [
+    "../batched/batch_1/hmc_samples.npz",
+    "../batched/batch_2/hmc_samples.npz",
+    "../batched/batch_3/hmc_samples.npz",
+    "../batched/batch_4/hmc_samples.npz",
+    "../batched/batch_5/hmc_samples.npz",
+    "../batched/batch_6/hmc_samples.npz",
+    "../batched/batch_7/hmc_samples.npz",
+    "../batched/batch_8/hmc_samples.npz",
+    "../batched/batch_9/hmc_samples.npz",
+    "../batched/batch_10/hmc_samples.npz"
+  ],
+  "seeds": {
+    "identity": 94011,
+    "square": 94012
+  },
+  "methods": [
+    "PMC-GP"
+  ],
+  "gp": {
+    "device": "cpu"
+  }
+}

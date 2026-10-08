@@ -1,0 +1,120 @@
+{
+  "shared": {
+    "n_iterations": 20,
+    "iteration_start": 0,
+    "seed": 26092900,
+    "parametric_form": "univariate_Gaussian",
+    "DGP_parameters": [
+      {
+        "mu": [
+          -3.4721359549995796,
+          -3.4721359549995796,
+          -3.4721359549995796,
+          -3.4721359549995796,
+          -3.4721359549995796,
+          5.47213595499958,
+          5.47213595499958,
+          5.47213595499958,
+          5.47213595499958,
+          5.47213595499958
+        ],
+        "sigma": [
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795,
+          3.1622776601683795
+        ]
+      }
+    ],
+    "num_nodes": 10,
+    "n": [
+      10000
+    ],
+    "preprocessing": null,
+    "n_inference": 100000,
+    "h": [
+      "identity",
+      "square"
+    ]
+  },
+  "pmc": {
+    "sampling_method": "iid",
+    "algorithm": [
+      "PMC"
+    ],
+    "w": [
+      "uniform"
+    ],
+    "method": [
+      "linear",
+      "MLP",
+      "GP"
+    ],
+    "degree": [
+      1
+    ],
+    "hidden_features": [
+      [
+        64,
+        64,
+        64
+      ]
+    ],
+    "activation": "relu",
+    "discrepancy_centering": "mean",
+    "ensemble_size": 2,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "base_learning_rate": {
+      "identity": 0.0001,
+      "square": 0.0003
+    },
+    "learning_rate_schedule": [
+      "cosine"
+    ],
+    "batch_size": [
+      1024
+    ],
+    "n_training_steps": [
+      "adaptive"
+    ],
+    "regression_loss": "mse",
+    "huber_delta": 1.0,
+    "loss_weighting": "uniform",
+    "input_degree": 1,
+    "gp_device": "cuda",
+    "gp_kernel": "matern_32",
+    "gp_inducing_count": 64,
+    "gp_local_neighborhood_exponent": null,
+    "gp_minimum_local_count": 256,
+    "gp_maximum_local_count": 131072,
+    "gp_maximum_updates": 40,
+    "gp_natural_gradient_learning_rate": 0.03,
+    "gp_minimum_epochs": 20,
+    "gp_patience": 5,
+    "gp_relative_tolerance": 0.0001,
+    "gp_learn_inducing_locations": false,
+    "gp_torch_num_threads": 1,
+    "gp_confidence_level": 0.95,
+    "gp_batch_size": 8192,
+    "gp_base_learning_rate": 0.03,
+    "gp_full_batch": true,
+    "gp_fixed_hyperparameters": true,
+    "gp_fixed_mean": -0.0014067163357406797,
+    "gp_fixed_lengthscale": 6,
+    "gp_fixed_outputscale": 0.5,
+    "gp_fixed_noise": 0.64,
+    "gp_dtype": "float64"
+  },
+  "fusion": {
+    "method": []
+  },
+  "results_filename": "batch_000_019.csv",
+  "output_dir": "results"
+}

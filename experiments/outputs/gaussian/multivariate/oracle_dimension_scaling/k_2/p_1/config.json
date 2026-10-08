@@ -1,0 +1,57 @@
+{
+  "shared": {
+    "n_iterations": 10,
+    "iteration_start": 0,
+    "seed": 26100700,
+    "parametric_form": "multivariate_Gaussian",
+    "DGP_parameters": [
+      {
+        "mu": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "cov_diag": [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    ],
+    "num_nodes": 2,
+    "n": [
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "preprocessing": null,
+    "h": [
+      "normalized_sum"
+    ]
+  },
+  "pmc": {
+    "sampling_method": "iid",
+    "algorithm": [
+      "Oracle"
+    ],
+    "w": [
+      "uniform"
+    ],
+    "method": [
+      "linear"
+    ]
+  },
+  "fusion": {
+    "method": []
+  },
+  "results_filename": "batch_000_009.csv",
+  "output_dir": "results"
+}

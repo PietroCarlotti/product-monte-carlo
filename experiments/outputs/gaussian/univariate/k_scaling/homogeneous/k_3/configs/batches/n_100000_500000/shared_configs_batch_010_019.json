@@ -1,0 +1,31 @@
+{
+  "n_iterations": 10,
+  "iteration_start": 10,
+  "seed": 26082603,
+  "parametric_form": "univariate_Gaussian",
+  "DGP_parameters": [
+    {
+      "mu": [
+        0,
+        0,
+        0
+      ],
+      "sigma": [
+        1.7320508075688772,
+        1.7320508075688772,
+        1.7320508075688772
+      ]
+    }
+  ],
+  "num_nodes": 3,
+  "n": [
+    100000,
+    500000
+  ],
+  "preprocessing": null,
+  "n_inference": 100000,
+  "h": [
+    "identity",
+    "square"
+  ]
+}

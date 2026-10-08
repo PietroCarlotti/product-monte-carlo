@@ -1,0 +1,18 @@
+{
+  "batch": 7,
+  "n_observations": 1100000,
+  "local_prior_scale": 6.324555320336758,
+  "local_prior_variance": 39.99999999999999,
+  "sampler_runtime_seconds": 1745.8315807376057,
+  "end_to_end_runtime_seconds": 2106.6873207231984,
+  "chains": 4,
+  "parallel_chains": false,
+  "chain_execution": "sequential_processes",
+  "per_chain_sampler_runtime_seconds": [
+    435.4366143634543,
+    438.0058013359085,
+    435.32703251205385,
+    437.0621325261891
+  ],
+  "serial_sampler_runtime_seconds": 1745.8315807376057
+}

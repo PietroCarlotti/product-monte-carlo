@@ -1,0 +1,202 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/280/higgs.zip",
+  "archive_sha256": "eca8d41530af41bef24854c4eb0e3e315d41b2c837aaff67d1fde908a29dee0f",
+  "archive_sha256_expected": null,
+  "raw_member": "HIGGS.csv.gz",
+  "n_observations": 11000000,
+  "feature_names": [
+    "intercept",
+    "feature_1",
+    "feature_2",
+    "feature_3",
+    "feature_4",
+    "feature_5",
+    "feature_6",
+    "feature_7",
+    "feature_8",
+    "feature_9",
+    "feature_10",
+    "feature_11",
+    "feature_12",
+    "feature_13",
+    "feature_14",
+    "feature_15",
+    "feature_16",
+    "feature_17",
+    "feature_18",
+    "feature_19",
+    "feature_20",
+    "feature_21",
+    "feature_22",
+    "feature_23",
+    "feature_24",
+    "feature_25",
+    "feature_26",
+    "feature_27",
+    "feature_28"
+  ],
+  "native_feature_names": [
+    "feature_1",
+    "feature_2",
+    "feature_3",
+    "feature_4",
+    "feature_5",
+    "feature_6",
+    "feature_7",
+    "feature_8",
+    "feature_9",
+    "feature_10",
+    "feature_11",
+    "feature_12",
+    "feature_13",
+    "feature_14",
+    "feature_15",
+    "feature_16",
+    "feature_17",
+    "feature_18",
+    "feature_19",
+    "feature_20",
+    "feature_21",
+    "feature_22",
+    "feature_23",
+    "feature_24",
+    "feature_25",
+    "feature_26",
+    "feature_27",
+    "feature_28"
+  ],
+  "response_column": "outcome",
+  "response_encoding": {
+    "0": 0,
+    "1": 1
+  },
+  "partition_column": "partition",
+  "batch_column": "batch",
+  "n_batches": 10,
+  "partition_rule": "fixed seeded permutation rank; batch assignment uses contiguous rank blocks",
+  "partition_seed": 91011,
+  "class_counts": {
+    "0": 5170877,
+    "1": 5829123
+  },
+  "class_proportions": {
+    "0": 0.4700797272727273,
+    "1": 0.5299202727272727
+  },
+  "batch_sizes": {
+    "1": 1100000,
+    "2": 1100000,
+    "3": 1100000,
+    "4": 1100000,
+    "5": 1100000,
+    "6": 1100000,
+    "7": 1100000,
+    "8": 1100000,
+    "9": 1100000,
+    "10": 1100000
+  },
+  "batch_class_counts": {
+    "1": {
+      "0": 517903,
+      "1": 582097
+    },
+    "2": {
+      "0": 516939,
+      "1": 583061
+    },
+    "3": {
+      "0": 516387,
+      "1": 583613
+    },
+    "4": {
+      "0": 517669,
+      "1": 582331
+    },
+    "5": {
+      "0": 516504,
+      "1": 583496
+    },
+    "6": {
+      "0": 518105,
+      "1": 581895
+    },
+    "7": {
+      "0": 516613,
+      "1": 583387
+    },
+    "8": {
+      "0": 516542,
+      "1": 583458
+    },
+    "9": {
+      "0": 516911,
+      "1": 583089
+    },
+    "10": {
+      "0": 517304,
+      "1": 582696
+    }
+  },
+  "features_removed": [],
+  "feature_transform": "intercept_unchanged; z_score_using_full_dataset_population_mean_and_standard_deviation_for_all_non_intercept_features",
+  "feature_means": {
+    "feature_1": 0.9914658435844754,
+    "feature_2": -8.297617882087675e-06,
+    "feature_3": -1.3272252572691956e-05,
+    "feature_4": 0.998536357431255,
+    "feature_5": 2.6134592495419678e-05,
+    "feature_6": 0.9909152318068624,
+    "feature_7": -2.02752039973047e-05,
+    "feature_8": 7.716199207106476e-06,
+    "feature_9": 0.9999687478204674,
+    "feature_10": 0.9927294304431257,
+    "feature_11": -1.0264440172705326e-05,
+    "feature_12": -2.076887349386353e-05,
+    "feature_13": 1.0000080177052306,
+    "feature_14": 0.992259051370714,
+    "feature_15": 1.4595613497730189e-05,
+    "feature_16": 3.6786319904849387e-06,
+    "feature_17": 1.0000114192496672,
+    "feature_18": 0.9861086617144728,
+    "feature_19": -5.756954065672088e-06,
+    "feature_20": 1.744903359610996e-05,
+    "feature_21": 1.0000001559677298,
+    "feature_22": 1.0342903040055769,
+    "feature_23": 1.0248048350281267,
+    "feature_24": 1.0505538681765316,
+    "feature_25": 1.009741840749997,
+    "feature_26": 0.97295961660851,
+    "feature_27": 1.0330355744315296,
+    "feature_28": 0.9598119879374024
+  },
+  "feature_standard_deviations": {
+    "feature_1": 0.565377675409952,
+    "feature_2": 1.008826481288019,
+    "feature_3": 1.0063462838864339,
+    "feature_4": 0.6000184644552624,
+    "feature_5": 1.006326164015619,
+    "feature_6": 0.47497472589219747,
+    "feature_7": 1.0093029528528026,
+    "feature_8": 1.0059010877881285,
+    "feature_9": 1.0278075277000787,
+    "feature_10": 0.4999938402484552,
+    "feature_11": 1.0093304676772883,
+    "feature_12": 1.006154390372475,
+    "feature_13": 1.0493979990325444,
+    "feature_14": 0.48766232580030866,
+    "feature_15": 1.008746709232577,
+    "feature_16": 1.0063049450323833,
+    "feature_17": 1.1936755216679882,
+    "feature_18": 0.5057776635499976,
+    "feature_19": 1.0076942258101345,
+    "feature_20": 1.006365587603694,
+    "feature_21": 1.4002093224580698,
+    "feature_22": 0.6746353374867416,
+    "feature_23": 0.3808073950500759,
+    "feature_24": 0.16457624382258443,
+    "feature_25": 0.39744529874618706,
+    "feature_26": 0.5254062490072279,
+    "feature_27": 0.36525560484356434,
+    "feature_28": 0.31333777670629415
+  }
+}

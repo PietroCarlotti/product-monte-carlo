@@ -1,0 +1,5 @@
+args <- commandArgs(trailingOnly = TRUE)
+if (length(args) != 2) stop("Usage: Rscript run_higgs_gbf.R CONFIG_PATH NODE_DIR")
+script <- sub("^--file=", "", grep("^--file=", commandArgs(), value = TRUE))
+source(file.path(dirname(normalizePath(script)), "higgs_backend.R"))
+run_higgs_gbf(normalizePath(args[[1]], mustWork = TRUE), normalizePath(args[[2]], mustWork = TRUE))

@@ -1,0 +1,32 @@
+{
+  "dataset": "UCI HIGGS",
+  "raw_data": "../../../processed/higgs/higgs_processed.csv",
+  "output_dir": "cores_4",
+  "prior": {
+    "variance": 4.0
+  },
+  "seeds": {
+    "gbf": 93011
+  },
+  "gbf": {
+    "particles_per_level": [
+      1000,
+      1000
+    ],
+    "merge_factors": [
+      5,
+      2
+    ],
+    "time_mesh": [
+      0.5,
+      1.0
+    ],
+    "precondition": true,
+    "resampling_method": "resid",
+    "ess_threshold": 0.5,
+    "diffusion_estimator": "NB",
+    "n_cores": 4,
+    "print_progress_iters": 1000
+  },
+  "run_status": "production"
+}

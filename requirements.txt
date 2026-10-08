@@ -1,0 +1,17 @@
+numpy>=1.24,<3
+pandas
+scipy>=1.10,<2
+torch>=2.1,<3
+gpytorch>=1.11,<2
+linear-operator>=0.5,<1
+psutil
+tqdm
+matplotlib
+plotly
+POT
+statsmodels
+zuko
+build
+pytest
+ruff
+scikit-learn

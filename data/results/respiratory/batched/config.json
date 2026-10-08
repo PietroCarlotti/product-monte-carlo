@@ -1,0 +1,31 @@
+{
+  "input": "data/processed/respiratory/respiratory_processed.csv",
+  "n_observations": 111,
+  "n_batches": 2,
+  "feature_names": [
+    "intercept",
+    "treat",
+    "sex",
+    "age",
+    "baseline"
+  ],
+  "response_column": "outcome",
+  "metadata_columns": [
+    "partition",
+    "batch",
+    "center",
+    "id"
+  ],
+  "partition_column": "batch",
+  "prior_scale": 2.0,
+  "local_prior_scales": {
+    "1": 2.815771906346718,
+    "2": 2.841254524453463
+  },
+  "chains": 4,
+  "warmup": 1000,
+  "post_warmup": 10000,
+  "seed": 91011,
+  "sampler": "numpyro_nuts",
+  "run_status": "completed"
+}

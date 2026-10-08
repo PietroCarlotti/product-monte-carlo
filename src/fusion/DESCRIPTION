@@ -1,0 +1,26 @@
+Package: fusion
+Title: Fusion Algorithms for Product Monte Carlo
+Version: 0.1.0
+Description: Data generating processes, fusion algorithms (Monte Carlo
+    Fusion, Bayesian Fusion, Generalised Bayesian Fusion), evaluation
+    metrics, and plotting utilities used to benchmark sampling methods
+    for the Product Monte Carlo (PMC) research project. Internal
+    research compendium package, not intended for CRAN release.
+Depends:
+    R (>= 4.4)
+Imports:
+    callr,
+    DCFusion,
+    expm,
+    ggplot2,
+    jsonlite,
+    layeredBB,
+    MASS,
+    mvtnorm,
+    patchwork,
+    transport
+Suggests:
+    testthat (>= 3.0.0)
+Encoding: UTF-8
+Roxygen: list(markdown = FALSE)
+RoxygenNote: 7.3.3

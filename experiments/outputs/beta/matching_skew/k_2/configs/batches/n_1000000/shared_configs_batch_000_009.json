@@ -1,0 +1,28 @@
+{
+  "n_iterations": 10,
+  "iteration_start": 0,
+  "seed": 20260825,
+  "parametric_form": "Beta",
+  "DGP_parameters": [
+    {
+      "a": [
+        2.0,
+        2.0
+      ],
+      "b": [
+        5.0,
+        5.0
+      ]
+    }
+  ],
+  "num_nodes": 2,
+  "n": [
+    1000000
+  ],
+  "preprocessing": null,
+  "n_inference": 100000,
+  "h": [
+    "identity",
+    "square"
+  ]
+}

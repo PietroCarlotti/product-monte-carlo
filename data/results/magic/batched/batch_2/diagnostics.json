@@ -1,0 +1,60 @@
+{
+  "chains": 4,
+  "warmup": 1000,
+  "post_warmup": 10000,
+  "backend": "gpu",
+  "parallel_chains": false,
+  "dense_mass": true,
+  "initialization": "default",
+  "map_max_iterations": 500,
+  "jax_enable_x64": false,
+  "effective_sample_size_min": 78714.38710476314,
+  "effective_sample_size_median": 81674.08676557518,
+  "split_r_hat_max": 0.9999825358390808,
+  "parameters": {
+    "intercept": {
+      "effective_sample_size": 81875.38889082144,
+      "split_r_hat": 0.9999596476554871
+    },
+    "fLength": {
+      "effective_sample_size": 81675.25536020077,
+      "split_r_hat": 0.999916672706604
+    },
+    "fWidth": {
+      "effective_sample_size": 79306.66355200716,
+      "split_r_hat": 0.9999260902404785
+    },
+    "fSize": {
+      "effective_sample_size": 81674.08676557518,
+      "split_r_hat": 0.9999431371688843
+    },
+    "fConc": {
+      "effective_sample_size": 79718.70294775428,
+      "split_r_hat": 0.9999305605888367
+    },
+    "fConc1": {
+      "effective_sample_size": 81024.01997360948,
+      "split_r_hat": 0.999925971031189
+    },
+    "fAsym": {
+      "effective_sample_size": 80312.45682125923,
+      "split_r_hat": 0.9999089241027832
+    },
+    "fM3Long": {
+      "effective_sample_size": 83591.3635059106,
+      "split_r_hat": 0.999947190284729
+    },
+    "fM3Trans": {
+      "effective_sample_size": 82973.66697049534,
+      "split_r_hat": 0.9999825358390808
+    },
+    "fAlpha": {
+      "effective_sample_size": 78714.38710476314,
+      "split_r_hat": 0.9999678730964661
+    },
+    "fDist": {
+      "effective_sample_size": 85940.440192094,
+      "split_r_hat": 0.9999348521232605
+    }
+  }
+}

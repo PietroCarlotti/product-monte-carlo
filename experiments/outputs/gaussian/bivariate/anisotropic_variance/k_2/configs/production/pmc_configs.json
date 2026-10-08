@@ -1,0 +1,77 @@
+{
+  "sampling_method": "iid",
+  "algorithm": [
+    "PMC",
+    "Oracle"
+  ],
+  "w": [
+    "uniform"
+  ],
+  "method": [
+    "linear",
+    "MLP"
+  ],
+  "degree": [
+    1
+  ],
+  "hidden_features": [
+    [
+      64,
+      64,
+      64
+    ]
+  ],
+  "activation": "relu",
+  "discrepancy_centering": "mean",
+  "ensemble_size": 2,
+  "optimizer": "Adam",
+  "weight_decay": 0.0,
+  "base_learning_rate": {
+    "identity": 0.0001,
+    "square": 0.0003
+  },
+  "learning_rate_schedule": [
+    "cosine"
+  ],
+  "batch_size": [
+    1024
+  ],
+  "n_training_steps": [
+    "adaptive"
+  ],
+  "regression_loss": "mse",
+  "huber_delta": 1.0,
+  "loss_weighting": "uniform",
+  "input_degree": 1,
+  "validated_cell_overrides": [
+    {
+      "method": "GP",
+      "design": {
+        "n": 1000000,
+        "anisotropy_factor": 16,
+        "h": "square"
+      },
+      "parameters": {
+        "gp_kernel": "rbf",
+        "gp_inducing_count": 64,
+        "gp_full_batch": true,
+        "gp_fixed_hyperparameters": true,
+        "gp_fixed_mean": 0.0,
+        "gp_fixed_lengthscale": 2.0,
+        "gp_fixed_outputscale": 0.5,
+        "gp_fixed_noise": 0.64,
+        "gp_dtype": "float64"
+      },
+      "validation": {
+        "iterations": 20,
+        "iteration_start": 0,
+        "seed_source_method": "GP",
+        "mean_mse": 8.825524675323181e-05,
+        "median_mse": 6.434825826126521e-05,
+        "gbf_mean_mse": 8.223173793693522e-05,
+        "production_previous_mean_mse": 0.0002475289691597335,
+        "paired_wins_vs_production": 18
+      }
+    }
+  ]
+}

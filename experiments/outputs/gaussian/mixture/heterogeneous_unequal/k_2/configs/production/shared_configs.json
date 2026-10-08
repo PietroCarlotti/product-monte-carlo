@@ -1,0 +1,110 @@
+{
+  "base_seed": 48271,
+  "component_sample_sizes": [
+    100,
+    500,
+    1000,
+    5000,
+    10000,
+    50000,
+    100000,
+    500000,
+    1000000
+  ],
+  "pmc": {
+    "base_learning_rate": {
+      "identity": 0.0001,
+      "square": 0.0003
+    },
+    "batch_size": 1024,
+    "device": "cuda",
+    "ensemble_size": 2,
+    "hidden_features": [
+      64,
+      64
+    ],
+    "learning_rate_schedule": "cosine",
+    "n_training_steps": "adaptive",
+    "gp": {
+      "inducing_count": 64,
+      "maximum_updates": 40,
+      "batch_size": 8192,
+      "learning_rate": 0.03,
+      "natural_gradient_learning_rate": 0.03,
+      "minimum_epochs": 20,
+      "patience": 5,
+      "relative_tolerance": 0.0001,
+      "learn_inducing_locations": false,
+      "full_batch": true,
+      "fixed_hyperparameters": true,
+      "fixed_mean": -0.0014067163357406797,
+      "fixed_lengthscale": 6,
+      "fixed_outputscale": 0.5,
+      "fixed_noise": 0.64,
+      "dtype": "float64",
+      "torch_num_threads": 1,
+      "kernel": "matern_32",
+      "device": "cuda",
+      "confidence_level": 0.95
+    }
+  },
+  "gbf": {
+    "n_cores": 1,
+    "time_mesh": "optimal",
+    "cess_0_threshold": 0.2,
+    "ess_threshold": 0.5
+  },
+  "n_inference": null,
+  "repetition_start": 0,
+  "repetitions": 50,
+  "repetitions_per_batch": 10,
+  "scenarios": [
+    {
+      "name": "heterogeneous_unequal_k2",
+      "nodes": [
+        {
+          "weights": [
+            0.75,
+            0.25
+          ],
+          "means": [
+            -1.5,
+            2.0
+          ],
+          "standard_deviations": [
+            0.7,
+            1.2
+          ]
+        },
+        {
+          "weights": [
+            0.2,
+            0.5,
+            0.3
+          ],
+          "means": [
+            -2.0,
+            0.5,
+            2.5
+          ],
+          "standard_deviations": [
+            1.1,
+            0.6,
+            0.9
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": [
+    "identity",
+    "square"
+  ],
+  "methods": [
+    "Oracle",
+    "PMC-OLS",
+    "PMC-MLP",
+    "PMC-GP",
+    "GBF"
+  ]
+}

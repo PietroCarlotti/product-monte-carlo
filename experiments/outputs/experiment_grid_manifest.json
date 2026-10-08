@@ -1,0 +1,3141 @@
+{
+  "schema_version": 1,
+  "config_policy": {
+    "default": "required",
+    "intentionally_absent": []
+  },
+  "experiments": [
+    {
+      "id": "beta_baseline_symmetric_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "baseline_symmetric",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/baseline_symmetric/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/baseline_symmetric/k_2/configs",
+      "canonical_config_root": "beta/baseline_symmetric/k_2/configs",
+      "canonical_result_root": "beta/baseline_symmetric/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_endpoint_singular_stress_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "endpoint_singular_stress",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/endpoint_singular_stress/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/endpoint_singular_stress/k_2/configs",
+      "canonical_config_root": "beta/endpoint_singular_stress/k_2/configs",
+      "canonical_result_root": "beta/endpoint_singular_stress/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_heterogeneous_concentration_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "heterogeneous_concentration",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/heterogeneous_concentration/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/heterogeneous_concentration/k_2/configs",
+      "canonical_config_root": "beta/heterogeneous_concentration/k_2/configs",
+      "canonical_result_root": "beta/heterogeneous_concentration/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_increased_concentration_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "increased_concentration",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/increased_concentration/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/increased_concentration/k_2/configs",
+      "canonical_config_root": "beta/increased_concentration/k_2/configs",
+      "canonical_result_root": "beta/increased_concentration/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_matching_skew_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "matching_skew",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/matching_skew/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/matching_skew/k_2/configs",
+      "canonical_config_root": "beta/matching_skew/k_2/configs",
+      "canonical_result_root": "beta/matching_skew/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_opposing_skew_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "opposing_skew",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/opposing_skew/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/opposing_skew/k_2/configs",
+      "canonical_config_root": "beta/opposing_skew/k_2/configs",
+      "canonical_result_root": "beta/opposing_skew/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "beta_uniform_k_2",
+      "role": "canonical",
+      "family": "beta",
+      "category": "",
+      "scenario": "uniform",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "beta/uniform/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "beta/uniform/k_2/configs",
+      "canonical_config_root": "beta/uniform/k_2/configs",
+      "canonical_result_root": "beta/uniform/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_bivariate_anisotropic_variance_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "bivariate",
+      "scenario": "anisotropic_variance",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "gaussian/bivariate/anisotropic_variance/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/bivariate/anisotropic_variance/k_2/configs",
+      "canonical_config_root": "gaussian/bivariate/anisotropic_variance/k_2/configs",
+      "canonical_result_root": "gaussian/bivariate/anisotropic_variance/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 8,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_bivariate_correlation_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "bivariate",
+      "scenario": "correlation",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "gaussian/bivariate/correlation/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/bivariate/correlation/k_2/configs",
+      "canonical_config_root": "gaussian/bivariate/correlation/k_2/configs",
+      "canonical_result_root": "gaussian/bivariate/correlation/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 10,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_bivariate_mean_shift_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "bivariate",
+      "scenario": "mean_shift",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "gaussian/bivariate/mean_shift/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/bivariate/mean_shift/k_2/configs",
+      "canonical_config_root": "gaussian/bivariate/mean_shift/k_2/configs",
+      "canonical_result_root": "gaussian/bivariate/mean_shift/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 6,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_bivariate_variance_scaling_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "bivariate",
+      "scenario": "variance_scaling",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "gaussian/bivariate/variance_scaling/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/bivariate/variance_scaling/k_2/configs",
+      "canonical_config_root": "gaussian/bivariate/variance_scaling/k_2/configs",
+      "canonical_result_root": "gaussian/bivariate/variance_scaling/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 8,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_location_scale_grid_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate",
+      "scenario": "location_scale_grid",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/location_scale_grid/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/location_scale_grid/k_2/configs",
+      "canonical_config_root": "gaussian/univariate/location_scale_grid/k_2/configs",
+      "canonical_result_root": "gaussian/univariate/location_scale_grid/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000,
+        2000000
+      ],
+      "expected_iterations": 30,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 16,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000_2000000",
+          "sample_sizes": [
+            1000000,
+            2000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_mixture_symmetric_bimodal_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "symmetric_bimodal",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/symmetric_bimodal/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/symmetric_bimodal/k_2/configs",
+      "canonical_config_root": "gaussian/mixture/symmetric_bimodal/k_2/configs",
+      "canonical_result_root": "gaussian/mixture/symmetric_bimodal/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_mixture_heterogeneous_unequal_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "heterogeneous_unequal",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/heterogeneous_unequal/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/heterogeneous_unequal/k_2/configs",
+      "canonical_config_root": "gaussian/mixture/heterogeneous_unequal/k_2/configs",
+      "canonical_result_root": "gaussian/mixture/heterogeneous_unequal/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-n Gaussian-mixture benchmark cells are not integrated with the unified launcher."
+    },
+    {
+      "id": "gaussian_mixture_weak_overlap_narrow_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "weak_overlap_narrow",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/weak_overlap_narrow/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/weak_overlap_narrow/k_2/configs",
+      "canonical_config_root": "gaussian/mixture/weak_overlap_narrow/k_2/configs",
+      "canonical_result_root": "gaussian/mixture/weak_overlap_narrow/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-n Gaussian-mixture benchmark cells are not integrated with the unified launcher."
+    },
+    {
+      "id": "gaussian_mixture_opposing_mode_weights_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "opposing_mode_weights",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/opposing_mode_weights/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/opposing_mode_weights/k_2/configs",
+      "canonical_config_root": "gaussian/mixture/opposing_mode_weights/k_2/configs",
+      "canonical_result_root": "gaussian/mixture/opposing_mode_weights/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-n Gaussian-mixture benchmark cells are not integrated with the unified launcher."
+    },
+    {
+      "id": "gaussian_mixture_heterogeneous_scale_unimodal_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "heterogeneous_scale_unimodal",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/heterogeneous_scale_unimodal/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/heterogeneous_scale_unimodal/k_2/configs",
+      "canonical_config_root": "gaussian/mixture/heterogeneous_scale_unimodal/k_2/configs",
+      "canonical_result_root": "gaussian/mixture/heterogeneous_scale_unimodal/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-n Gaussian-mixture benchmark cells are not integrated with the unified launcher."
+    },
+    {
+      "id": "gaussian_mixture_mixed_components_k_3",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "mixture",
+      "scenario": "mixed_components",
+      "num_nodes": 3,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/mixture/mixed_components/k_3/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/mixture/mixed_components/k_3/configs",
+      "canonical_config_root": "gaussian/mixture/mixed_components/k_3/configs",
+      "canonical_result_root": "gaussian/mixture/mixed_components/k_3/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "PMC-MLP",
+        "PMC-OLS",
+        "GBF",
+        "Oracle"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-n Gaussian-mixture benchmark cells are not integrated with the unified launcher."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_2/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_2/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 2,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_500",
+          "sample_sizes": [
+            500
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_5000",
+          "sample_sizes": [
+            5000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        },
+        {
+          "container": "n_50000",
+          "sample_sizes": [
+            50000
+          ]
+        },
+        {
+          "container": "n_100000",
+          "sample_sizes": [
+            100000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-cost sample sizes beyond the completed grid are intentional exceptions."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_3",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 3,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_3/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_3/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_3/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_3/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 3,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_500",
+          "sample_sizes": [
+            500
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_5000",
+          "sample_sizes": [
+            5000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        },
+        {
+          "container": "n_50000",
+          "sample_sizes": [
+            50000
+          ]
+        },
+        {
+          "container": "n_100000",
+          "sample_sizes": [
+            100000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-cost sample sizes beyond the completed grid are intentional exceptions."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_5",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 5,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_5/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_5/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_5/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_5/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 5,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_500",
+          "sample_sizes": [
+            500
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_5000",
+          "sample_sizes": [
+            5000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        },
+        {
+          "container": "n_50000",
+          "sample_sizes": [
+            50000
+          ]
+        },
+        {
+          "container": "n_100000",
+          "sample_sizes": [
+            100000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        500000,
+        1000000
+      ],
+      "notes": "High-cost sample sizes beyond the completed grid are intentional exceptions."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_10",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 10,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_10/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_10/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_10/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_10/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 10,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_500",
+          "sample_sizes": [
+            500
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        5000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "notes": "Only unconfigured sample sizes remain intentional high-cost runtime exceptions."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_20",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 20,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_20/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_20/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_20/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_20/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 20,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        500,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "notes": "Only unconfigured sample sizes remain intentional high-cost runtime exceptions."
+    },
+    {
+      "id": "gaussian_multivariate_dimension_scaling_k_2_p_50",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 50,
+      "current_result_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_50/results"
+      ],
+      "artifact_roots": [
+        "gaussian/multivariate/dimension_scaling/k_2/p_50/artifacts"
+      ],
+      "current_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_50/configs",
+      "canonical_config_root": "gaussian/multivariate/dimension_scaling/k_2/p_50/configs",
+      "canonical_result_root": "gaussian/multivariate/dimension_scaling/k_2/p_50/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 50,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "notes": "Only unconfigured sample sizes remain intentional high-cost runtime exceptions."
+    },
+    {
+      "id": "fusion_methods_benchmark_univariate_k_2",
+      "role": "canonical",
+      "family": "fusion_methods_benchmark",
+      "category": "univariate",
+      "scenario": "location_scale_grid",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "fusion_benchmark/univariate/location_scale_grid/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "fusion_benchmark/univariate/location_scale_grid/k_2/configs",
+      "canonical_config_root": "fusion_benchmark/univariate/location_scale_grid/k_2/configs",
+      "canonical_result_root": "fusion_benchmark/univariate/location_scale_grid/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        1000,
+        10000,
+        100000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "BF",
+        "GBF",
+        "MCF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 9,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        },
+        {
+          "container": "n_100000",
+          "sample_sizes": [
+            100000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Special-purpose fusion comparison with a scenario-specific sample-size grid."
+    },
+    {
+      "id": "fusion_methods_benchmark_bivariate_k_2",
+      "role": "canonical",
+      "family": "fusion_methods_benchmark",
+      "category": "bivariate",
+      "scenario": "mean_shift",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "fusion_benchmark/bivariate/mean_shift/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "fusion_benchmark/bivariate/mean_shift/k_2/configs",
+      "canonical_config_root": "fusion_benchmark/bivariate/mean_shift/k_2/configs",
+      "canonical_result_root": "fusion_benchmark/bivariate/mean_shift/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        1000,
+        10000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "BF",
+        "GBF",
+        "MCF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 6,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Special-purpose fusion comparison with a scenario-specific sample-size grid."
+    },
+    {
+      "id": "fusion_methods_benchmark_multivariate_k_2_p_2",
+      "role": "canonical",
+      "family": "fusion_methods_benchmark",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 2,
+      "current_result_roots": [
+        "fusion_benchmark/multivariate/dimension_scaling/k_2/p_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_2/configs",
+      "canonical_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_2/configs",
+      "canonical_result_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        1000,
+        10000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "BF",
+        "GBF",
+        "MCF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 2,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Special-purpose fusion comparison with a scenario-specific sample-size grid."
+    },
+    {
+      "id": "fusion_methods_benchmark_multivariate_k_2_p_3",
+      "role": "canonical",
+      "family": "fusion_methods_benchmark",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 3,
+      "current_result_roots": [
+        "fusion_benchmark/multivariate/dimension_scaling/k_2/p_3/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_3/configs",
+      "canonical_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_3/configs",
+      "canonical_result_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_3/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        1000,
+        10000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "BF",
+        "GBF",
+        "MCF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 3,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Special-purpose fusion comparison with a scenario-specific sample-size grid."
+    },
+    {
+      "id": "fusion_methods_benchmark_multivariate_k_2_p_4",
+      "role": "canonical",
+      "family": "fusion_methods_benchmark",
+      "category": "multivariate",
+      "scenario": "dimension_scaling",
+      "num_nodes": 2,
+      "dimension": 4,
+      "current_result_roots": [
+        "fusion_benchmark/multivariate/dimension_scaling/k_2/p_4/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_4/configs",
+      "canonical_config_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_4/configs",
+      "canonical_result_root": "fusion_benchmark/multivariate/dimension_scaling/k_2/p_4/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        1000,
+        10000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "BF",
+        "GBF",
+        "MCF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 4,
+      "config_sample_groups": [
+        {
+          "container": "n_100",
+          "sample_sizes": [
+            100
+          ]
+        },
+        {
+          "container": "n_1000",
+          "sample_sizes": [
+            1000
+          ]
+        },
+        {
+          "container": "n_10000",
+          "sample_sizes": [
+            10000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Special-purpose fusion comparison with a scenario-specific sample-size grid."
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_2/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_2/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_3",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 3,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_3/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_3/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_3/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_3/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "DC-GBF rows remain auxiliary to the canonical method grid."
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_5",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 5,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_5/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_5/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_5/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_5/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_10",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 10,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_10/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_10/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_10/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_10/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_20",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 20,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_20/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_20/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_20/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_20/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_50",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous",
+      "num_nodes": 50,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/homogeneous/k_50/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_50/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_50/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_50/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_2",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 2,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_2/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_2/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_2/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_2/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_3",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 3,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_3/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_3/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_3/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_3/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_5",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 5,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_5/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_5/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_5/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_5/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_10",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 10,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_10/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_10/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_10/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_10/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_20",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 20,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_20/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_20/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_20/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_20/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_heterogeneous_k_50",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "heterogeneous",
+      "num_nodes": 50,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/heterogeneous/k_50/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_50/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/heterogeneous/k_50/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/heterogeneous/k_50/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "notes": "The configured n=100 and n=500 cells require 20 repetitions; larger unconfigured cells remain intentional exceptions."
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_concentration_k_10",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "concentration",
+      "num_nodes": 10,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/concentration/k_10/results"
+      ],
+      "artifact_roots": [
+        "gaussian/univariate/k_scaling/concentration/k_10/results/n_1000_5000"
+      ],
+      "current_config_root": "gaussian/univariate/k_scaling/concentration/k_10/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/concentration/k_10/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/concentration/k_10/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 4,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_divergence_k_10",
+      "role": "canonical",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "divergence",
+      "num_nodes": 10,
+      "dimension": 1,
+      "current_result_roots": [
+        "gaussian/univariate/k_scaling/divergence/k_10/results"
+      ],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/divergence/k_10/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/divergence/k_10/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/divergence/k_10/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500,
+        1000,
+        5000,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000000
+      ],
+      "expected_iterations": 20,
+      "expected_methods": [
+        "GBF",
+        "GP",
+        "MLP",
+        "Oracle",
+        "linear"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 5,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        },
+        {
+          "container": "n_1000_5000",
+          "sample_sizes": [
+            1000,
+            5000
+          ]
+        },
+        {
+          "container": "n_10000_50000",
+          "sample_sizes": [
+            10000,
+            50000
+          ]
+        },
+        {
+          "container": "n_100000_500000",
+          "sample_sizes": [
+            100000,
+            500000
+          ]
+        },
+        {
+          "container": "n_1000000",
+          "sample_sizes": [
+            1000000
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": ""
+    },
+    {
+      "id": "gaussian_univariate_k_scaling_homogeneous_k_3_dc_gbf",
+      "role": "auxiliary",
+      "family": "gaussian",
+      "category": "univariate_k_scaling",
+      "scenario": "homogeneous_dc_gbf",
+      "num_nodes": 3,
+      "dimension": 1,
+      "current_result_roots": [],
+      "artifact_roots": [],
+      "current_config_root": "gaussian/univariate/k_scaling/homogeneous/k_3/auxiliary/dc_gbf/configs",
+      "canonical_config_root": "gaussian/univariate/k_scaling/homogeneous/k_3/auxiliary/dc_gbf/configs",
+      "canonical_result_root": "gaussian/univariate/k_scaling/homogeneous/k_3/auxiliary/dc_gbf/results",
+      "sample_size_policy": "grid",
+      "expected_sample_sizes": [
+        100,
+        500
+      ],
+      "expected_iterations": 10,
+      "expected_methods": [
+        "DC-GBF"
+      ],
+      "expected_targets": [
+        "identity",
+        "square"
+      ],
+      "expected_design_rows_per_cell": 1,
+      "config_sample_groups": [
+        {
+          "container": "n_100_500",
+          "sample_sizes": [
+            100,
+            500
+          ]
+        }
+      ],
+      "intentional_exceptions": [],
+      "notes": "Auxiliary DC-GBF comparison available only for the declared sample-size subset."
+    }
+  ]
+}

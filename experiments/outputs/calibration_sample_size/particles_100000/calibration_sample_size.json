@@ -1,0 +1,36 @@
+{
+  "parametric_form": "univariate_Gaussian",
+  "num_nodes": 2,
+  "mu": [1, 1],
+  "sigma": [1, 1],
+  "sample_sizes": [100, 1000, 10000],
+  "n_repetitions": 500,
+  "seed": 20261001,
+  "coverage_levels": [0.05, 0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90, 0.95],
+  "gp": {
+    "kernel": "matern_32",
+    "inducing_count": 64,
+    "maximum_updates": 40,
+    "natural_gradient_learning_rate": 0.03,
+    "minimum_epochs": 20,
+    "patience": 5,
+    "relative_tolerance": 0.0001,
+    "learn_inducing_locations": false,
+    "full_batch": true,
+    "fixed_hyperparameters": false,
+    "learning_rate": 0.03,
+    "torch_num_threads": 1,
+    "dtype": "float64"
+  },
+  "gbf": {
+    "n_inference": 100000,
+    "coalescence_time": "optimal",
+    "n_time_steps": "optimal",
+    "cess_0_threshold": 0.2,
+    "ess_threshold": 0.5,
+    "precondition": "variance",
+    "diffusion_estimator": "Poisson",
+    "n_cores": 1
+  },
+  "results_filename": "results.csv"
+}

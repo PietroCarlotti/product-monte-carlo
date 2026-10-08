@@ -1,0 +1,77 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/159/magic+gamma+telescope.zip",
+  "archive_sha256": "252e0a78333c108d0ea54537b61154aa781e95a15675e65ddf9b76993617191d",
+  "archive_sha256_expected": null,
+  "raw_member": "magic04.data",
+  "n_observations": 19020,
+  "feature_names": [
+    "intercept",
+    "fLength",
+    "fWidth",
+    "fSize",
+    "fConc",
+    "fConc1",
+    "fAsym",
+    "fM3Long",
+    "fM3Trans",
+    "fAlpha",
+    "fDist"
+  ],
+  "native_feature_names": [
+    "fLength",
+    "fWidth",
+    "fSize",
+    "fConc",
+    "fConc1",
+    "fAsym",
+    "fM3Long",
+    "fM3Trans",
+    "fAlpha",
+    "fDist"
+  ],
+  "response_column": "class",
+  "response_encoding": {
+    "h": 0,
+    "g": 1
+  },
+  "partition_column": "partition",
+  "batch_column": "batch",
+  "n_batches": 10,
+  "partition_rule": "fixed seeded permutation rank; batch assignment uses contiguous rank blocks",
+  "partition_seed": 91001,
+  "class_counts": {
+    "0": 6688,
+    "1": 12332
+  },
+  "class_proportions": {
+    "0": 0.3516298633017876,
+    "1": 0.6483701366982124
+  },
+  "features_removed": [],
+  "feature_transform": "intercept_unchanged; z_score_using_full_dataset_population_mean_and_standard_deviation_for_all_non_intercept_features",
+  "feature_count": 10,
+  "feature_means": {
+    "fLength": 53.25015392744479,
+    "fWidth": 22.180966219768667,
+    "fSize": 2.825016961093586,
+    "fConc": 0.38032707150368034,
+    "fConc1": 0.21465713459516297,
+    "fAsym": -4.331745157728706,
+    "fM3Long": 10.545544815983176,
+    "fM3Trans": 0.2497259568874869,
+    "fAlpha": 27.645706677181913,
+    "fDist": 193.81802646687697
+  },
+  "feature_standard_deviations": {
+    "fLength": 42.36374123586791,
+    "fWidth": 18.34557400605378,
+    "fSize": 0.4725862247970713,
+    "fConc": 0.1828083413445236,
+    "fConc1": 0.11050789374287473,
+    "fAsym": 59.204505548326786,
+    "fM3Long": 50.99877729915463,
+    "fM3Trans": 20.82689142586354,
+    "fAlpha": 26.102934286288104,
+    "fDist": 74.72982237929789
+  }
+}

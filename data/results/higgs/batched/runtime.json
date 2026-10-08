@@ -1,0 +1,7 @@
+{
+  "batch_execution": "serial_processes",
+  "n_batches": 10,
+  "serial_sampler_runtime_seconds": 17440.2827936206,
+  "serial_end_to_end_runtime_seconds": 21338.55333812721,
+  "wall_clock_seconds": 21338.55333812721
+}

@@ -1,0 +1,131 @@
+{
+  "experiment": {
+    "name": "hsp90_sbi_pmc_pilot",
+    "status": "finalized",
+    "design": "controlled_fixed_pose_single_image_sbi_with_pmc_moments",
+    "num_images": 10,
+    "num_posterior_samples_per_image": 1000
+  },
+  "parameterization": {
+    "latent_parameter": "z",
+    "physical_parameter": "theta",
+    "transformation": "theta = 19 * sigmoid(z)",
+    "true_theta": 12,
+    "unknown_parameters": [
+      "theta"
+    ]
+  },
+  "priors": {
+    "full_z_prior": {
+      "distribution": "normal",
+      "mean": 0,
+      "variance": 1
+    },
+    "single_image_fractional_z_prior": {
+      "distribution": "normal",
+      "mean": 0,
+      "variance": 10,
+      "standard_deviation": 3.1622776601683795
+    }
+  },
+  "simulator": {
+    "external_directory_name": "heterogeneity_gym_hsp90",
+    "source_revision": null,
+    "source_note": "Provided simulator directory has no Git metadata.",
+    "fixed_pose": [
+      0,
+      0,
+      0,
+      90,
+      90,
+      0
+    ],
+    "defocus": 1500,
+    "noise_strength": 1,
+    "independent_random_key_per_image": true,
+    "independent_noise_per_image": true
+  },
+  "sbi": {
+    "num_simulations": 1024,
+    "method": "NPE_C",
+    "embedding_network": "cnn",
+    "density_estimator": "neural_spline_flow",
+    "max_num_epochs": 200,
+    "converged_epoch": 57,
+    "training_batch_size": 64,
+    "render_batch_size": 8,
+    "seeds": {
+      "training": 1000,
+      "observation": 20000,
+      "posterior": 30000
+    }
+  },
+  "pmc": {
+    "parameter_space": "z",
+    "sampling_method": "iid",
+    "discrepancy_method": "consecutive",
+    "consensus_weights": {
+      "method": "equal",
+      "weight_per_image": 0.1
+    },
+    "ols": {
+      "degree": 1
+    },
+    "mlp": {
+      "hidden_features": [
+        32,
+        32
+      ],
+      "num_training_steps": 1000,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "device": "cpu",
+      "use_cosine_schedule": true,
+      "ensemble_size": 5,
+      "input_degree": 1,
+      "activation": "relu",
+      "discrepancy_centering": "target",
+      "regression_loss": "mse",
+      "seeds": {
+        "identity": 94011,
+        "square": 94012
+      }
+    }
+  },
+  "kde": {
+    "grid_min_z": -1,
+    "grid_max_z": 2,
+    "num_grid_points": 12001,
+    "scott_bandwidth_multipliers": [
+      0.5,
+      0.75,
+      1,
+      1.5,
+      2
+    ]
+  },
+  "software_versions": {
+    "python": "3.13.7",
+    "sbi": "0.27.0",
+    "torch": "2.8.0",
+    "jax": "0.4.38",
+    "jaxlib": "0.4.38",
+    "cryojax": "0.3.1",
+    "equinox": "0.11.11",
+    "numpy": "2.3.3",
+    "scipy": "1.16.2"
+  },
+  "outputs": {
+    "sbi_posterior": "sbi/posterior.pt",
+    "sbi_posterior_draws": "sbi/posterior_draws.npz",
+    "pmc_ols_moments": "pmc/pmc_ols_moments.json",
+    "pmc_mlp_moments": "pmc/pmc_mlp_moments.json",
+    "tail_diagnostics": "diagnostics/tail_diagnostics.json",
+    "kde_product_check": "diagnostics/kde_product_check.json"
+  },
+  "artifact_sha256": {
+    "sbi/posterior.pt": "6777874e6046726f6a51e6521981607a2172ea9ae6e23451a752d73166184c86",
+    "sbi/posterior_draws.npz": "79d20b06f26136afe2f17364442baf815c1cadf3ab30f28f6d12a0384d0850b0"
+  }
+}

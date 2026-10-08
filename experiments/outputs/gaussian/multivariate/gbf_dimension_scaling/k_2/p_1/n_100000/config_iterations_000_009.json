@@ -1,0 +1,43 @@
+{
+  "shared": {
+    "n_iterations": 10,
+    "iteration_start": 0,
+    "seed": 26100503,
+    "parametric_form": "univariate_Gaussian",
+    "DGP_parameters": [
+      {
+        "mu": [
+          0,
+          2
+        ],
+        "sigma": [
+          1.4142135623730951,
+          1.4142135623730951
+        ]
+      }
+    ],
+    "num_nodes": 2,
+    "n": [
+      100000
+    ],
+    "n_inference": 100000,
+    "preprocessing": null,
+    "h": [
+      "normalized_sum"
+    ]
+  },
+  "pmc": {
+    "sampling_method": "iid",
+    "algorithm": [],
+    "method": []
+  },
+  "fusion": {
+    "method": [
+      "GBF"
+    ],
+    "coalescence_time": "optimal",
+    "n_time_steps": "optimal"
+  },
+  "results_filename": "batch_000_009.csv",
+  "output_dir": "results"
+}

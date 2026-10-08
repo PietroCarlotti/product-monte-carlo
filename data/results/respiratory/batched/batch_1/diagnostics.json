@@ -1,0 +1,32 @@
+{
+  "chains": 4,
+  "warmup": 1000,
+  "post_warmup": 10000,
+  "backend": "gpu",
+  "parallel_chains": false,
+  "effective_sample_size_min": 40395.51708589203,
+  "effective_sample_size_median": 40858.72169379919,
+  "split_r_hat_max": 1.000061273574829,
+  "parameters": {
+    "intercept": {
+      "effective_sample_size": 40733.60121840032,
+      "split_r_hat": 0.9999735951423645
+    },
+    "treat": {
+      "effective_sample_size": 42776.4656244026,
+      "split_r_hat": 1.000008463859558
+    },
+    "sex": {
+      "effective_sample_size": 40395.51708589203,
+      "split_r_hat": 0.9999633431434631
+    },
+    "age": {
+      "effective_sample_size": 40858.72169379919,
+      "split_r_hat": 1.000061273574829
+    },
+    "baseline": {
+      "effective_sample_size": 42096.83500481133,
+      "split_r_hat": 0.9999864101409912
+    }
+  }
+}

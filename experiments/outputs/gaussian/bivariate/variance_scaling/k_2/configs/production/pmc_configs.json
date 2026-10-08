@@ -1,0 +1,166 @@
+{
+  "sampling_method": "iid",
+  "algorithm": [
+    "PMC",
+    "Oracle"
+  ],
+  "w": [
+    "uniform"
+  ],
+  "method": [
+    "linear",
+    "MLP"
+  ],
+  "degree": [
+    1
+  ],
+  "hidden_features": [
+    [
+      64,
+      64,
+      64
+    ]
+  ],
+  "activation": "relu",
+  "discrepancy_centering": "mean",
+  "ensemble_size": 2,
+  "optimizer": "Adam",
+  "weight_decay": 0.0,
+  "base_learning_rate": {
+    "identity": 0.0001,
+    "square": 0.0003
+  },
+  "learning_rate_schedule": [
+    "cosine"
+  ],
+  "batch_size": [
+    1024
+  ],
+  "n_training_steps": [
+    "adaptive"
+  ],
+  "regression_loss": "mse",
+  "huber_delta": 1.0,
+  "loss_weighting": "uniform",
+  "input_degree": 1,
+  "validated_cell_overrides": [
+    {
+      "method": "GP",
+      "design": {
+        "n": 1000000,
+        "variance_factor": 9,
+        "h": "square"
+      },
+      "parameters": {
+        "gp_kernel": "rbf",
+        "gp_inducing_count": 64,
+        "gp_full_batch": true,
+        "gp_fixed_hyperparameters": true,
+        "gp_fixed_mean": 0.0,
+        "gp_fixed_lengthscale": 2.0,
+        "gp_fixed_outputscale": 0.5,
+        "gp_fixed_noise": 0.64,
+        "gp_dtype": "float64"
+      },
+      "validation": {
+        "iterations": 20,
+        "iteration_start": 0,
+        "seed_source_method": "GP",
+        "mean_mse": 9.014925102050857e-05,
+        "median_mse": 7.142873745283966e-05,
+        "gbf_mean_mse": 8.438509466759765e-05,
+        "production_previous_mean_mse": 0.0001626862034030403,
+        "paired_wins_vs_production": 14
+      }
+    },
+    {
+      "method": "MLP",
+      "design": {
+        "n": 1000000,
+        "variance_factor": 9,
+        "h": "square"
+      },
+      "parameters": {
+        "hidden_features": [
+          256,
+          256,
+          256
+        ],
+        "activation": "silu",
+        "base_learning_rate": 0.0002,
+        "batch_size": 8192,
+        "ensemble_size": 2,
+        "n_training_steps": "adaptive"
+      },
+      "validation": {
+        "iterations": 20,
+        "iteration_start": 0,
+        "seed_source_method": "MLP",
+        "mean_mse": 5.312816907814202e-05,
+        "median_mse": 4.088926100430473e-05,
+        "gbf_mean_mse": 8.438509466759765e-05,
+        "production_previous_mean_mse": 0.001186631558391717,
+        "paired_wins_vs_production": 20
+      }
+    },
+    {
+      "method": "MLP",
+      "design": {
+        "n": 1000000,
+        "variance_factor": 16,
+        "h": "square"
+      },
+      "parameters": {
+        "hidden_features": [
+          256,
+          256,
+          256
+        ],
+        "activation": "silu",
+        "base_learning_rate": 0.00035,
+        "batch_size": 8192,
+        "ensemble_size": 2,
+        "n_training_steps": "adaptive"
+      },
+      "validation": {
+        "iterations": 20,
+        "iteration_start": 0,
+        "seed_source_method": "MLP",
+        "mean_mse": 0.00016407987278899708,
+        "median_mse": 0.00014598197867151524,
+        "gbf_mean_mse": 8.773398322765971e-05,
+        "production_previous_mean_mse": 0.003946302429259062,
+        "paired_wins_vs_production": 19
+      }
+    },
+    {
+      "method": "GP",
+      "design": {
+        "n": 1000000,
+        "variance_factor": 16,
+        "h": "square"
+      },
+      "parameters": {
+        "gp_kernel": "matern_32",
+        "gp_inducing_count": 64,
+        "gp_full_batch": true,
+        "gp_fixed_hyperparameters": true,
+        "gp_fixed_mean": 0.0,
+        "gp_fixed_lengthscale": 4.0,
+        "gp_fixed_outputscale": 0.5,
+        "gp_fixed_noise": 1.0,
+        "gp_dtype": "float64"
+      },
+      "validation": {
+        "iterations": 20,
+        "iteration_start": 0,
+        "seed_source_method": "GP",
+        "mean_mse": 0.00019597396361220135,
+        "median_mse": 0.00016577500497034331,
+        "gbf_mean_mse": 8.773398322765971e-05,
+        "production_previous_mean_mse": 0.0018866652811855421,
+        "paired_wins_vs_production": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "mean_z": 0.570853491338281,
+  "second_moment_z": 0.3286987348613871,
+  "variance_z": 0.0028250262882822397,
+  "sd_z": 0.0531509763624549,
+  "K": 10,
+  "S": 1000,
+  "settings": {
+    "sampling_method": "iid",
+    "discrepancy_method": "consecutive",
+    "method": "PMC-MLP",
+    "hidden_features": [
+      32,
+      32
+    ],
+    "n_training_steps": 1000,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "device": "cpu",
+    "use_cosine_schedule": true,
+    "ensemble_size": 5,
+    "input_degree": 1,
+    "activation": "relu",
+    "discrepancy_centering": "target",
+    "regression_loss": "mse"
+  },
+  "seeds": {
+    "identity": 94011,
+    "square": 94012
+  },
+  "runtime_seconds": {
+    "identity": 0.8048986669891747,
+    "square": 0.8076572499994654
+  },
+  "device": "cpu",
+  "device_name": "cpu",
+  "torch_version": "2.8.0",
+  "warmup": true
+}

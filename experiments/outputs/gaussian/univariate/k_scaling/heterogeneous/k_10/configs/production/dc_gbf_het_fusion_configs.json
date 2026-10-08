@@ -1,0 +1,7 @@
+{
+  "method": [
+    "DC-GBF-HET"
+  ],
+  "coalescence_time": "optimal",
+  "n_time_steps": "optimal"
+}

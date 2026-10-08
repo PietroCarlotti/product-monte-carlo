@@ -1,0 +1,36 @@
+{
+  "repetitions": 50,
+  "sample_size": 1000,
+  "mu_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "seed": 26100500,
+  "device": "cuda",
+  "band_quantiles": [
+    0.1,
+    0.9
+  ],
+  "gp": {
+    "inducing_count": 64,
+    "maximum_updates": 1600,
+    "batch_size": 8192,
+    "learning_rate": 0.003,
+    "natural_gradient_learning_rate": 0.003,
+    "minimum_epochs": 10,
+    "patience": 3,
+    "relative_tolerance": 0.0001,
+    "learn_inducing_locations": false,
+    "full_batch": false,
+    "dtype": "float32",
+    "torch_num_threads": 1,
+    "kernel": "rbf"
+  },
+  "results_filename": "results.csv",
+  "figure_filename": "posterior_variance_by_overlap.pdf"
+}

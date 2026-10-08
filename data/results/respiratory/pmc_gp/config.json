@@ -1,0 +1,17 @@
+{
+  "run_status": "production",
+  "batch_inputs": [
+    "../batched/batch_1/hmc_samples.npz",
+    "../batched/batch_2/hmc_samples.npz"
+  ],
+  "seeds": {
+    "identity": 94011,
+    "square": 94012
+  },
+  "methods": [
+    "PMC-GP"
+  ],
+  "gp": {
+    "device": "cpu"
+  }
+}

@@ -1,0 +1,11 @@
+method,target,coefficient,estimate
+GBF,identity,beta_0,0.1550906863896265
+GBF,identity,beta_1,-0.5015924032846418
+GBF,identity,beta_2,-0.28196155509903836
+GBF,identity,beta_3,-0.29308171918280923
+GBF,identity,beta_4,0.9431266016888709
+GBF,square,beta_0,0.07468005717482588
+GBF,square,beta_1,0.30886075796674883
+GBF,square,beta_2,0.1375264640016739
+GBF,square,beta_3,0.13904342566162722
+GBF,square,beta_4,0.9450633506551697

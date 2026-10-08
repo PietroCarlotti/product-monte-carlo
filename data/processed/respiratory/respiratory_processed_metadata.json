@@ -1,0 +1,63 @@
+{
+  "source_path": "data/raw/respiratory/respiratory.csv",
+  "n_observations": 111,
+  "feature_names": [
+    "intercept",
+    "treat",
+    "sex",
+    "age",
+    "baseline"
+  ],
+  "native_feature_names": [
+    "treat",
+    "sex",
+    "age",
+    "baseline"
+  ],
+  "response_column": "outcome",
+  "partition_column": "partition",
+  "batch_column": "batch",
+  "n_batches": 2,
+  "partition_rule": "deterministic rank after sorting by center and patient identifier",
+  "batch_rule": "observed hospital center mapped to one batch per center",
+  "center_to_batch": {
+    "1": 1,
+    "2": 2
+  },
+  "class_counts": {
+    "0": 53,
+    "1": 58
+  },
+  "class_proportions": {
+    "0": 0.4774774774774775,
+    "1": 0.5225225225225225
+  },
+  "batch_sizes": {
+    "1": 56,
+    "2": 55
+  },
+  "batch_class_counts": {
+    "1": {
+      "0": 35,
+      "1": 21
+    },
+    "2": {
+      "0": 18,
+      "1": 37
+    }
+  },
+  "features_removed": [],
+  "feature_transform": "intercept_unchanged; z_score_using_full_dataset_population_mean_and_standard_deviation_for_all_non_intercept_features",
+  "feature_means": {
+    "treat": 0.5135135135135135,
+    "sex": 0.7927927927927928,
+    "age": 33.27927927927928,
+    "baseline": 0.45045045045045046
+  },
+  "feature_standard_deviations": {
+    "treat": 0.49981735159207935,
+    "sex": 0.4053052929442161,
+    "age": 13.591976416400415,
+    "baseline": 0.4975387845579846
+  }
+}
